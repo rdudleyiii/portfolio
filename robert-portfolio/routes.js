@@ -1,10 +1,10 @@
 Router.route('/', function () {
-  this.render('home');
+  this.render('index');
 });
 
-Router.route('/photos', function () {
-  this.render('photos');
-});
+// Router.route('/photos', function () {
+//   this.render('photos');
+// });
 
 // Router.route('/items/:_id', function () {
 //   var item = Items.findOne({_id: this.params._id});

@@ -11,3 +11,6 @@ iron:router
 anbuselvan:justified-gallery
 chriswessels:slideout
 twbs:bootstrap
+fortawesome:fontawesome
+jquery
+natestrauser:jquery-scrollto
