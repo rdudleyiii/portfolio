@@ -1,9 +1,8 @@
 if (Meteor.isClient) {
-	$('#photos-link').on('click', function() {
-		$(this).closest('li').addClass('active');
-		$('html, body').animate({
-			scrollTo: $('.marketing').offset().top() - $('.masthead').outerHeight()
-		}, 1500);
+	$('#photos-link').closest('li').on('click', function() {
+		console.log('photos clicked');
+		$(this).addClass('active');
+		$('html, body').scrollTo(('.marketing'), 1500);
 	});	
 }
 
