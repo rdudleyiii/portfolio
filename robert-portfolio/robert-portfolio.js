@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 	$('#photos-link').on('click', function() {
 		$(this).closest('li').addClass('active');
 		$('html, body').animate({
-			scrollTo: $('#mygallery')
+			scrollTo: $('.marketing').offset().top() - $('.masthead').outerHeight()
 		}, 1500);
 	});	
 }
