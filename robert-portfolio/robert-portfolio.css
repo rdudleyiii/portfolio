@@ -1,25 +1,32 @@
 /*
  * Globals
  */
+
 body {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
+
 /* Links */
+
 a,
 a:focus,
 a:hover {
-  color: #fff;
+    color: #fff;
 }
 
+
 /* Custom default button */
+
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
 }
 
 
@@ -29,38 +36,45 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    height: 100%;
+    background-color: #333;
 }
 
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
+
 .site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  background: url(hero.jpg) center center;
-  background-size: cover;
-  position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    /* For at least Firefox */
+    min-height: 100%;
+    background: url(hero.jpg) center center;
+    background-size: cover;
+    position: relative;
 }
 
 .site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+    display: table-cell;
+    vertical-align: top;
 }
 
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 /* Padding for spacing */
+
 .inner {
-  padding: 30px;
+    padding: 30px;
 }
 
 
@@ -68,70 +82,78 @@ body {
  * Header
  */
 
- .masthead {
- 	background-color: #f2f2f2;
- 	opacity: .95; 
- 	z-index: 99;
- }
+.masthead {
+    background-color: #f2f2f2;
+    opacity: .95;
+    z-index: 99;
+}
 
- .masthead .inner {
- 	padding: 0 30px;
- }
+.masthead .inner {
+    padding: 0 30px;
+}
+
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .masthead-brand a {
-	color: #444;
-	text-shadow: none;
-	height: 40px;
+    color: #444;
+    text-shadow: none;
+    height: 40px;
 }
 
 .masthead-brand a img {
-	margin-right: 10px;
-	height: 40px;
-	width: 40px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
 }
+
 ul.nav.masthead-nav {
-  margin-top: 7px;
+    margin-top: 7px;
 }
+
 .masthead-nav > li {
-  display: inline-block;
+    display: inline-block;
 }
+
 .masthead-nav > li + li {
-  margin-left: 20px;
+    margin-left: 20px;
 }
+
 .masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #444; /* IE8 proofing */
-  color: rgba(68,68,68,.9);
-  border-bottom: 2px solid transparent;
-  text-shadow: none;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    /* IE8 proofing */
+    color: rgba(68, 68, 68, .9);
+    border-bottom: 2px solid transparent;
+    text-shadow: none;
 }
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(68,68,68,.25);
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(68, 68, 68, .25);
 }
+
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #404040;
-  border-bottom-color: #404040;
+    color: #404040;
+    border-bottom-color: #404040;
 }
 
 @media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
 }
 
 
@@ -140,35 +162,36 @@ ul.nav.masthead-nav {
  */
 
 .cover {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .cover .cover-heading {
-	font-size: 24px;
-	text-shadow: 0 3px 8px rgba(0,0,0,.85)
+    font-size: 24px;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, .85)
 }
 
 .cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+    padding: 10px 20px;
+    font-weight: bold;
 }
-
 
 .lead.lead-button {
-	position: absolute;
-	margin: 0 auto;
-	left: -50%;
-	right: -50%;
-	bottom: 125px;
+    position: absolute;
+    margin: 0 auto;
+    left: -50%;
+    right: -50%;
+    bottom: 125px;
 }
+
 
 /*
  * Footer
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+    color: #999;
+    /* IE8 proofing */
+    color: rgba(255, 255, 255, .5);
 }
 
 
@@ -177,50 +200,53 @@ ul.nav.masthead-nav {
  */
 
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%;
+        /* Must be percentage or pixels for horizontal alignment */
+    }
 }
 
 @media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    
-  }
+    .masthead,
+    .mastfoot,
+    .cover-container {}
 }
 
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
+
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin: 50px 0 100px 0;
-  text-align: center;
+
+.marketing .wow {
+    margin: 50px 0;
+    text-align: center;
 }
+
 .marketing h2 {
-  font-weight: normal;
+    font-weight: normal;
 }
+
 .marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -228,48 +254,49 @@ ul.nav.masthead-nav {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
 }
 
+
 /* Thin out the marketing headings */
+
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+
 @media (max-width: 767px) {
-	.cover .cover-heading {
-		margin-top: 150px;
-	}
+    .cover .cover-heading {
+        margin-top: 150px;
+    }
 }
 
-
 @media (min-width: 768px) {
-	.featurette-heading {
-		font-size: 50px;
-	}
-
-	.cover .cover-heading {
-		font-size: 32px;
-	}
+    .featurette-heading {
+        font-size: 50px;
+    }
+    .cover .cover-heading {
+        font-size: 32px;
+    }
 }
 
 @media (min-width: 992px) {
-	.featurette-heading {
-		margin-top: 120px;
-	}
-
-	.cover .cover-heading {
-		font-size: 46px;
-	}
+    .featurette-heading {
+        margin-top: 120px;
+    }
+    .cover .cover-heading {
+        font-size: 46px;
+    }
 }
 
 @media (min-width: 1251px) {
-	.cover .cover-heading {
-		font-size: 56px;
-	}
+    .cover .cover-heading {
+        font-size: 56px;
+    }
 }

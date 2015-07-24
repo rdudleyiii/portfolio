@@ -1,9 +1,21 @@
 if (Meteor.isClient) {
-	$('#photos-link').closest('li').on('click', function() {
-		console.log('photos clicked');
-		$(this).addClass('active');
-		$('html, body').scrollTo(('.marketing'), 1500);
-	});	
+	Template.index.events = {
+		'click .masthead-nav li, click .masthead-brand a, click .toTop' : function(e){
+			var $this = $(e.target);
+
+			if (!$this.hasClass('toTop')) {
+				$('.active').removeClass('active');
+				$this.parent().addClass('active');
+			}
+
+			$('html, body').scrollTo(("." + $this.attr('data-scroller')), 500);
+		}
+	}
+
+	Template.index.rendered = function(){
+		new WOW().init()
+	} 
+  		
 }
 
 if (Meteor.isServer) {
@@ -11,14 +23,3 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
-
-// Template.index.rebdered = function(){
-
-// }
-
-
-// var portfolio = function() {
-// 	$(function() {
-// 		alert('loaded');
-// 	});
-// }(jQuery);
