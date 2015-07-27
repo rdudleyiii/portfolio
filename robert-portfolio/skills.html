@@ -1,53 +1,81 @@
 <template name="uxSkills">
 	<div class="col-lg-4 wow flipInX">
-		{{> portfolioHeading}}
+		{{> usabiltyTesting}}
     </div><!-- /.col-lg-4 -->
 
     <div class="col-lg-4 wow flipInX">
-    	{{> photosHeading}}  
+    	{{> processFlow}}  
     </div><!-- /.col-lg-4 -->
 
     <div class="col-lg-4 wow flipInX">
-    	{{> musicHeading}}  
+    	{{> uxResearch}}  
     </div><!-- /.col-lg-4 -->
 
     <div class="col-lg-4 wow flipInX">
-      {{> musicHeading}}  
-    </div><!-- /.col-lg-4 -->
-
-    <div class="col-lg-4 wow flipInX">
-      {{> musicHeading}}  
-    </div><!-- /.col-lg-4 -->
-
-    <div class="col-lg-4 wow flipInX">
-      {{> musicHeading}}  
+      {{> prototyping}}  
     </div><!-- /.col-lg-4 -->
 </template>
-
-<template name="usabiltyTesting"></template>
-<template name="processflow"></template>
-<template name="uxResearch"></template>
-<template name="prototyping"></template>
-
-<!--  -->
 <template name="fedSkills">
-	<div class="col-lg-4 wow flipInX">
-		{{> musicHeading}}  
-	</div>
+    <div class="col-lg-4 wow flipInX">
+        {{> htmlCSS}}  
+    </div>
 
-	<div class="col-lg-4 wow flipInX">
-		{{> musicHeading}}  
-	</div>
+    <div class="col-lg-4 wow flipInX">
+        {{> jsJquery}}  
+    </div>
 
-	<div class="col-lg-4 wow flipInX">
-		{{> musicHeading}}  
-	</div>
-	<div class="col-lg-4 wow flipInX">
-		{{> musicHeading}}  
-	</div>
-
+    <div class="col-lg-4 wow flipInX angular">
+        {{> angular}}  
+    </div>
+    <div class="col-lg-4 wow flipInX meteor">
+        {{> meteor}}  
+    </div>
 </template>
-<template name="htmlCss"></template>
-<template name="javascriptJquery"></template>
-<template name="angular"></template>
-<template name="meteor"></template>
+
+<template name="usabiltyTesting">
+    <h2>Usabilty Testing</h2>
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Usabilty Testing" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="processFlow">
+    <h2>User Process Flow</h2>
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="User Process Flow" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="uxResearch">
+    <h2>User Research</h2>
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="User Research" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="prototyping">
+    <h2>Wireframes / Prototypes</h2>
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Wireframes / Prototypes" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="htmlCSS">
+    <h2>HTML / CSS</h2>
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="HTML / CSS" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="jsJquery">
+    <h2>JavaScript / jQuery</h2>
+    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="JavaScript / jQuery" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="angular">
+    <h2>Angular</h2>
+    <img class="img-circle" src="angular.png" alt="Angular" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
+
+<template name="meteor">
+    <h2>Meteor</h2>
+    <img class="img-circle" src="meteor.png" alt="Meteor" width="140" height="140">
+    <p>Donec sed odio dui.</p>
+</template>
