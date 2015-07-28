@@ -22,7 +22,7 @@ if (Meteor.isClient) {
 
         'click .masthead-nav li, click .masthead-brand a, click .toTop': function(e) {
             var $this = $(e.target);
-            var scrollSpot = $("." + $this.attr('data-scroller')).offset().top - $('.masthead').height();
+            var scrollspot = $("." + $this.attr('data-scroller')).offset().top - $('.masthead').height();
 
             if (!$this.hasClass('toTop')) {
                 $('.active').removeClass('active');

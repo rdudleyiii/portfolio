@@ -237,10 +237,13 @@ ul.nav.masthead-nav {
 /* Center align the text within the three columns below the carousel */
 
 .marketing .wow {
-    margin: 50px 0 25px 0;
+    margin: 25px 0 0 0;
     text-align: center;
+    height: 250px;
 }
-
+.marketing .front-end {
+	margin-top: 50px;
+}
 .marketing h2 {
     font-weight: normal;
 }
@@ -257,7 +260,7 @@ ul.nav.masthead-nav {
 ------------------------- */
 
 .featurette-divider {
-    margin: 80px 0;
+    margin: 40px 0;
     /* Space out the Bootstrap <hr> more */
 }
 
@@ -268,6 +271,18 @@ ul.nav.masthead-nav {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+.featurette .dillards div {
+	height: 475px;
+}
+
+.featurette .dillards div img {
+	max-width: 100%;
+}
+
+.progress {
+	margin: 20px 0;
 }
 
 
@@ -291,7 +306,8 @@ ul.nav.masthead-nav {
 
 @media (min-width: 992px) {
     .featurette-heading {
-        margin-top: 120px;
+        margin-top: 0;
+        margin-bottom: 40px;
     }
     .cover .cover-heading {
         font-size: 46px;
@@ -302,4 +318,10 @@ ul.nav.masthead-nav {
     .cover .cover-heading {
         font-size: 56px;
     }
+}
+
+@media (max-width: 1487px) and (min-width: 1200px) {
+	.wf-proto {
+
+	}
 }

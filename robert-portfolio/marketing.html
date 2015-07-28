@@ -1,7 +1,7 @@
 <template name="marketing">
     <div class="marketing">
         <!-- Three columns of text below the carousel -->
-        <div class="row">
+        <div class="row portfolio">
             {{> fedSkills}}
         </div>
         <hr class="featurette-divider">
@@ -11,42 +11,56 @@
         <!-- /.row -->
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
-        <div class="row featurette portfolio">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        <div class="row featurette">
+            <div class="col-md-12">
+                <h2 class="featurette-heading">Dillards.com | June 2015 | Responsive update</h2>
+                <div class="dillards">
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <a href="#">
+                      <img src="dillardsHome.png">
+                      <h4>Homepage</h4>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <a href="#">
+                      <img src="dillardsListing.png">
+                      <h4>Product Listing</h4>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <a href="#">
+                      <img src="dillardsProduct.png">
+                      <h4>Product Detail</h4>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-3">
+                    <a href="#">
+                      <img src="dillardsBag.png">
+                      <h4>Shopping Cart</h4>
+                    </a>
+                  </div>
+                </div>
             </div>
         </div>
-        <hr class="featurette-divider">
+        <!-- <hr class="featurette-divider">
         <div class="row featurette photos">
             <div class="col-md-7 col-md-push-5">
                 <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
-            <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
-        </div>
+        </div> -->
         <hr class="featurette-divider">
         <div class="row featurette contact">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Contact. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Twitter, dribbble, github</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <div class="col-md-12">
+                {{> contact}}
             </div>
         </div>
         <hr class="featurette-divider">
         <!-- /END THE FEATURETTES -->
         <!-- FOOTER -->
         <footer>
-            <p class="pull-right">
+            <!-- <p class="pull-right">
                 <a href="#" class="toTop" data-scroller="site-wrapper">Back to top</a>
-            </p>
+            </p> -->
             <p>© 2015 Robert Dudley<a href="#" class="hidden">|Privacy</a><a href="#" class="hidden">|Terms</a></p>
         </footer>
     </div>
